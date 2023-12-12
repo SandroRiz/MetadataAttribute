@@ -21,7 +21,7 @@ MemoryStream stream = new();
 
 JsonSerializerOptions options = new()
 {
-    //ReferenceHandler = ReferenceHandler.IgnoreCycles,     //workaround if you don't want to use JsonIgnore
+    ReferenceHandler = ReferenceHandler.IgnoreCycles,     //workaround if you don't want to use JsonIgnore
     WriteIndented = true
 };
 
