@@ -1,9 +1,9 @@
 ﻿using MetadataAttribute.MetaData;
-using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MetadataAttribute.Models;
 
-[MetadataType(typeof(AuthorMetadata))]
+[ModelMetadataType(typeof(AuthorMetadata))]
 public partial class Author
 {
   
